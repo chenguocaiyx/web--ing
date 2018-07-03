@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>文本属性</title>
+	<style>
+		div{
+			/*文字大小*/
+			font-size: 24px;
+			/*文字粗细 100-900 不推荐使用font-weight:bold;*/
+			font-weight: 700; 
+			/*字体*/
+			font-family: 微软雅黑;
+			/*文字风格*/
+			font-style: italic;
+			/*行间距*/
+			line-height: 40px;
+
+		}
+		/*文字属性简写*/
+		/*font: italic 700 16px/40px 微软雅黑;*/
+		/*font: font-style font-weight font-size/line-height font-family;*/
+		/*字体大小和字体必写*/
+		p{
+			font:italic 700 50px/40px 微软雅黑;
+		}
+		/*文字的表达方式*/
+		/*1、中文名称*/
+		h1{
+			font: 24px 微软雅黑;
+		}
+		/*2、英文名称*/
+		h2{
+			font: 24px microsoft yahei;
+		}
+		/*3、unicode编码*/
+		/*escape("宋体")*/
+		h3{
+			font: 24px \u5FAE\u8F6F\u96C5\u9ED1;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		广东东软学院
+	</div>
+	<p>广东东软学院</p>
+	<h1>广东东软学院</h1>
+	<h2>广东东软学院</h2>
+	<h3>广东东软学院</h3>
+</body>
+</html>

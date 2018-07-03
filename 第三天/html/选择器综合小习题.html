@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>选择器综合小习题</title>
+	<!-- 根据样式写出对应得html结构 -->
+	<style>
+		div.div1 ul.box li,div.div1 p{
+			color: red;
+			font-size: 50px;
+		}
+		div.box p.p1,div.box div.div1 p,p{
+			color: blue;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<p class="p1">华南师范大学</p>
+		<p>广东东软学院</p>
+		<p>class快捷写法，如：div.box + tab 键</p>
+
+	<div class="div1">
+		<p>neusoft</p>
+		<span>广东东软学院</span>
+		<ul class="box">
+			<li>广东东软学院</li>
+			
+		</ul>
+
+		<ul>
+			<li>广东东软学院</li>
+			
+		</ul>
+	</div>
+	</div>
+
+	
+</body>
+</html>
