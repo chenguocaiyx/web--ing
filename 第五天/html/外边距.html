@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.box{
+			width: 300px;
+			height: 300px;
+			background: #aaa;
+			/*margin-top: 20px;
+			margin-bottom: 20px;
+			margin-right: 40px;
+			margin-left: 50px; */
+			margin: 20px 30px 40px 50px;
+		}
+		/*垂直方向外边距的合并，如果上下两个盒子都设置了外边距，取的的值较大的一边*/
+		.one{
+			width: 300px;
+			height: 300px;
+			background: red;
+			margin-bottom: 20px;
+
+		}
+		.two{
+			margin-top: 100px;
+			width: 300px;
+			height: 200px;
+			background: orange;
+			
+		}
+		/*外边距塌陷,嵌套的盒子，直接给盒子设置垂直方向的时候，会发生外边距塌陷*/
+		.box1{
+			width: 500px;
+			height: 400px;
+			background: #232323;
+			/*border: 1px solid red;*/
+			overflow: hidden;
+		}
+		.box2{
+			width: 200px;
+			height: 200px;
+			background: #eee;
+			margin-top: 30px;
+		}
+	</style>
+</head>
+<body>
+	<div class="box"></div>
+	<div class="one"></div>
+	<div class="two"></div>
+	<br>
+	<h4>外边距塌陷</h4>
+	<h4>解决方法</h4>
+	<ol>
+		<li>给父级盒子设置边框，但是不推荐使用</li>
+		<li>给父级盒子设置 overflow:hidden ; bfc 格式化上下文</li>
+	</ol>
+	<div class="box1">
+		<div class="box2"></div>
+	</div>
+
+	
+</body>
+</html>

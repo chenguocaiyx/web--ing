@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>内边距</title>
+	<style>
+		.box{
+			width: 300px;
+			height: 300px;
+			border:1px solid red;
+			/*padding-left: 20px;
+			padding-right: 30px;
+			padding-top: 40px;
+			padding-bottom: 50px;*/
+			padding: 30px 20px 40px 50px;
+		}
+		/*内边距会撑大盒子*/
+		.box1{
+			width: 500px;
+			height: 300px;
+			background: green;
+			/*padding-left:160px;*/
+			text-align: center;
+		}
+		.box2{
+			/*width: 400px;
+			height: 225px;*/
+			/*width: 300px;
+			height: 150px;*/
+			width: 500px;
+			height: 300px;
+			background: pink;
+			/*padding-left: 100px;
+			padding-top: 75px;*/
+			/*padding: 75px 100px;*/
+			
+		}
+		.box3{
+			/*继承的盒子没定义宽度时，设置左右内边距边距盒子不会被撑大 但是设置上下内边距垂直方向会被撑大*/
+			padding-left: 30px;
+			height:150px;
+			background: red;
+			padding-top: 500px;
+
+		}
+	</style>
+</head>
+<body>
+	<div class="box">广东东软学院</div>
+	<br>
+	<div class="box1"><img src="../../images/2.png" alt=""></div>
+	<br>
+	<h4>影响盒子的大小</h4>
+	<div class="box2">
+		<div class="box3"></div>
+	</div>
+	<ol>
+		<li></li>
+		<li></li>
+		<li></li>
+		
+	</ol>
+</body>
+</html>
