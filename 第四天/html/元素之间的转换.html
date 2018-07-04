@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>元素之间的转换</title>
+	<style>
+		.box1 div,.box1 p{
+			/*块级元素转换为行内元素 不能定义宽高 一行显示*/
+			display: inline;
+			height: 500px;
+			width: 500px;
+			background-color: blue;
+		}
+		.box1 span,.box1 a{
+			/*行内元素转换为块级元素 能定义宽高 独占一行显示*/
+			display: block;
+			height: 100px;
+			width: 500px;
+			background-color: green;
+			text-align: center;
+		}
+		/*块和行内元素转行内块元素*/
+		/*在一行显示，可设置宽高*/
+		.box div,.box p,.box span , .box a{
+			display: inline-block;
+			height: 100px;
+			width: 150px;
+			background-color: #888;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div class="box1">
+		<div>广东东软学院</div>
+		<p>广东东软学院</p>
+		<span>广东东软学院</span>
+		<a href="#">广东东软学院</a>
+	</div>
+	
+	<div class="box">
+		<div>广东东软学院</div>
+		<p>广东东软学院</p>
+		<span>广东东软学院</span>
+		<a href="#">广东东软学院</a>
+	</div>
+	
+
+	
+</body>
+</html>

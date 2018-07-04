@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		input{
+			width: 280px;
+			height: 30px;
+			background: url(../../images/1.jpg) no-repeat right;
+		}	
+		.list li{
+			/*清除列表项符号*/
+			list-style: none;
+			background: url(../../images/li.gif) no-repeat left;
+			text-indent: 1em;
+		}
+		.list li a:hover{
+			color: red;
+		}
+		.shopping{
+			width: 100px;
+			height: 32px;
+			background: url(../../images/110.png) no-repeat top;
+		}
+		.shopping:hover{
+			background-position: bottom;
+		}
+		a{
+			text-decoration: none;
+		}
+		.nav a{
+			display: inline-block;
+			width: 120px;
+			height: 58px;
+			text-align: center;
+			color: white;
+			line-height: 50px;
+		}
+		.one{
+			background: url(../../images/bg1.png) no-repeat;
+		}
+		.two{
+			background: url(../../images/bg2.png) no-repeat;
+		}
+		.three{
+			background: url(../../images/bg3.png) no-repeat;
+		}
+		.four{
+			background: url(../../images/bg4.png) no-repeat;
+		}
+		.five{
+			background: url(../../images/bg5.png) no-repeat;
+		}
+		.one:hover{
+			background: url(../../images/bg6.png) no-repeat;
+		}
+		.two:hover{
+			background: url(../../images/bg7.png) no-repeat;
+		}
+
+	</style>
+</head>
+<body>
+	<h1>练习</h1>
+
+	<ol>
+		<li>
+			搜索框
+			<input type="text" value="请输入关键字">
+		</li>
+		<li>列表
+			<ul class="list">
+				<li><a href="#"> 大明星:姜潮魔性拜年道晚安</a></li>
+				<li><a href="#">  软萌正太徐浩演绎《小幸运》</a></li>
+				<li><a href="#">  漫威绝逼好看的电影镜头合集</a></li>
+				<li><a href="#">  从没见过这么搞笑的祖孙组合</a></li>
+				<li><a href="#">  史上最容易挨揍的自助餐吃法</a></li>
+			</ul>
+		</li>
+		<li>
+			购物车案例
+			<div class="shopping">
+			</div>
+		</li>
+		<li class="nav">
+			五彩导航栏<br>
+			<a href="#" class="one">五彩导航</a>
+			<a href="#" class="two">五彩导航</a>
+			<a href="#" class="three">五彩导航</a>
+			<a href="#" class="four">五彩导航</a>
+			<a href="#" class="five">五彩导航</a>
+		</li>
+	</ol>
+	
+	
+</body>
+</html>

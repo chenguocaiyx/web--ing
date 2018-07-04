@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	/*!important>行内样式>ID选择器>类选择器>标签>默认*/
+	/*优先级特点1、继承权重为0；2、权重叠加*/
+		div{
+			color: red !important;
+		}
+		.box{
+			color: green;
+			font-size: 60px;
+		}
+		#box{
+			color: blue;
+			font-size: 100px;
+		}
+	</style>
+</head>
+<body>
+	<div class="box" id="box" style="font-size: 10px;color: yellow;">广东东软学院</div>
+	
+</body>
+</html>
