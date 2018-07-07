@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<style>
+	body{
+		margin:0;
+	}
+		.box{
+			width: 100px;
+			height: 100px;
+			background: red;
+			/*静态定位*/
+			position: static;
+			
+		}
+		.box1{
+			width: 100px;
+			height: 100px;
+			/*绝对定位 相对于浏览器*/
+			position: absolute;
+			background: green;
+		}
+		.red,.green{
+			width: 100px;
+			height: 100px;
+		}
+		.red{
+			background: red;
+			/*相对定位，相对于自身原来的位置 占据原来的位置，不脱标 ,工作用最多的“子绝父相”子元素绝对定位，父元素相对定位，
+			行内元素使用相对定位不能转行内块*/
+			position: relative;
+			left: 100px;
+		}
+		.green{
+			background: green;
+		}
+	</style>
+</head>
+<body>
+	
+	<!-- <div class="box"></div>
+	<div class="box1"></div> -->
+	<br>
+	<div class="red"></div>
+	<div class="green"></div>
+	
+	
+</body>
+</html>
